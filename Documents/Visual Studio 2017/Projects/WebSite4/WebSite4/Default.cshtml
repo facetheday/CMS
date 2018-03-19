@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Home Page";
+}
+
+@{ 
+    if (!WebSecurity.IsAuthenticated)
+    {
+        Response.Redirect("~/Account/Login");
+    }
+
+
+}
+
+
+<p><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/471241323%3Fsecret_token%3Ds-ni2el&color=%232b1a20&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></iframe></p>
+
+<h3>A brief summary of my musical history</h3>
+
+<ul>
+    <li>
+        <b>1986</b> - born in Prague, Czech Republic
+    </li>
+    <li><b>2001</b> - started playing guitar</li>
+    <li>
+        <b>2004-2012</b> - played, sung and composed music in several local bands (Arawen, Deafening Silence, Pessimist, Mindwork),
+        as a frontman of Mindwork performed more than 120 live gigs in Czech Republic and middle Europe (Germany, Poland, Slovakia) including 3 appearances at one of the biggest metal festivals in Europe - Brutal Assault and supporting bands such as Cynic and Nocturnus.
+    </li>
+    <li>
+        <b>2013</b> - Mindwork teamed up with US label Divebomb records for the worldwide release of "Eterea" and "Into The Swirl"
+    </li>
+    <li>
+        <b>2014</b> - Mindwork disbanded, foundation of Face The Day
+    </li>
+</ul>
+
+<h3>Notable album releases</h3>
+
+<table>
+    <tr style="width:200px">
+        <td><img src="~/Images/intoTheSwirl.jpg" height="150" width="150" /></td>
+        <td>
+            <b>Mindwork - Into The Swirl (2009)</b>
+            <ul>
+                <li>Label: Shindy production for CZ, in 2013 rereleased worldwide by Divebomb records</li>
+                <li>Note: Album has been nominated at Ceny Andel as the best 2009 CZ release in hard&heavy category. I've composed music and lyrics + recorded guitars and vocals on this album.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr style="width:200px">
+        <td><img src="~/Images/longaevus.jpg" height="150" width="150"/></td>
+        <td>
+            <b>Pessimist - Longaevus (2010)</b>
+            <ul>
+                <li>Label: self-released</li>
+                <li>Note: I recorded guitars on this album.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr style="width:200px">
+        <td><img src="~/Images/Eterea.jpg" height="150" width="150"/></td>
+        <td>
+            <b>Mindwork - Eterea(2012)</b>
+            <ul>
+                <li>Label: self-released, in 2013 rereleased worldwide by Divebomb records</li>
+                <li>Note: Album has been nominated at Ceny Andel as the best 2012 CZ release in hard&heavy category. I've composed music and lyrics (with one exception) + recorded guitars and vocals on this album.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr style="width:200px">
+        <td><img src="~/Images/corrodingDreams.jpg" height="150" width="150"/></td>
+        <td>
+            <b>Face The Day - Corroding Dreams (2016)</b>
+            <ul>
+                <li>Label: self-released</li>
+                <li>Note: I've composed music and lyrics (with one exception) + recorded all instruments (except drums) and vocals on this album. I've produced, recorded and mixed the album by myself.</li>
+            </ul>
+        </td>
+    </tr>
+
+</table>
+
+
+<h3>Face The Day video releases</h3>
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ymWLi0T3n4E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/bGanf-AbTQA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+<h3>Links</h3>
+<p><b>Bandcamp:</b> <a href="https://facetheday.bandcamp.com">https://facetheday.bandcamp.com</a> </p> 
+<p><b>Facebook:</b> <a href="https://www.facebook.com/facethedayband">https://www.facebook.com/facethedayband</a>  </p>
+<p><b>YouTube:</b> <a href="https://www.youtube.com/channel/UCnBDqyiBOPDnWKTsKPdgfsA">https://www.youtube.com/channel/UCnBDqyiBOPDnWKTsKPdgfsA</a>  </p>
+
+<h3>Contact</h3>
+<p>martinschuster@seznam.cz</p>
+<p>+420723680222</p>
+
